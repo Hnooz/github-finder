@@ -3,7 +3,7 @@ const GITHUB_URL = import.meta.env.VITE_GITHUB_URL
 const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN
 const github = axios.create({
     baseURL: GITHUB_URL,
-    headers: {Authorization: `token ${GITHUB_TOKEN}`}
+    headers: { Authorization: `token ${GITHUB_TOKEN}`}
 })
 
 export const searchUsers = async (text) => {
