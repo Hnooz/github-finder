@@ -1,0 +1,17 @@
+
+function Footer() {
+    const footerYear = new Date().getFullYear()
+  return (
+    <footer className="footer p-10 bg-gray-700 text-primary-content footer-center">
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+        </svg>
+
+            <p>Copyright &copy; {footerYear} All rights reserved</p>
+        </div>
+    </footer>
+  )
+}
+
+export default Footer
